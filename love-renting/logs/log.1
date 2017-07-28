@@ -1,0 +1,707 @@
+[I 170728 17:16:47 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 1.34ms
+[I 170728 17:16:47 web:1946] 200 GET /static/js/template.js (192.168.119.24) 2.34ms
+[I 170728 17:16:48 web:1946] 200 GET /api/session (192.168.119.24) 1.65ms
+[I 170728 17:16:48 web:1946] 200 GET /api/index (192.168.119.24) 1.18ms
+[I 170728 17:16:48 web:1946] 200 GET /api/area (192.168.119.24) 1.25ms
+[W 170728 17:16:48 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.119.24) 1.53ms
+[I 170728 17:16:50 web:1946] 304 GET /api/session (192.168.119.24) 1.55ms
+[I 170728 17:16:50 web:1946] 200 GET /api/userinfo (192.168.119.24) 2.01ms
+[I 170728 17:16:52 web:1946] 200 GET /lorders.html (192.168.119.24) 2.48ms
+[I 170728 17:16:52 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 1.47ms
+[I 170728 17:16:52 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 1.35ms
+[I 170728 17:16:52 web:1946] 304 GET /api/session (192.168.119.24) 1.34ms
+[I 170728 17:16:52 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 3.60ms
+[I 170728 17:32:56 web:1946] 200 GET /lorders.html (192.168.119.24) 1.60ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 6.62ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 1.76ms
+[I 170728 17:32:56 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 2.53ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 1.86ms
+[I 170728 17:32:56 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 2.24ms
+[I 170728 17:32:56 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 17.11ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 2.64ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 10.26ms
+[I 170728 17:32:56 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 3.34ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 2.78ms
+[I 170728 17:32:56 web:1946] 200 GET /static/js/template.js (192.168.119.24) 3.49ms
+[I 170728 17:32:56 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 3.63ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 4.10ms
+[I 170728 17:32:56 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.119.24) 61.13ms
+[I 170728 17:32:56 web:1946] 200 GET /api/session (192.168.119.24) 1.12ms
+[E 170728 17:32:56 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Mobile Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|5993723e|fa78bc0e5d56e95e7af2eb85a92c66db|1501234376'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 17:32:56 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 2.86ms
+[I 170728 17:32:56 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.95ms
+[I 170728 17:32:56 web:1946] 200 GET /login.html (192.168.119.24) 2.29ms
+[I 170728 17:32:56 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 1.97ms
+[I 170728 17:32:56 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 2.01ms
+[I 170728 17:32:56 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 1.93ms
+[I 170728 17:33:22 web:1946] 200 PUT /api/session (192.168.119.24) 9.66ms
+[I 170728 17:33:22 web:1946] 200 GET /index.html (192.168.119.24) 7.93ms
+[I 170728 17:33:22 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 9.00ms
+[I 170728 17:33:22 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 7.01ms
+[I 170728 17:33:22 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 11.74ms
+[I 170728 17:33:22 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 4.82ms
+[W 170728 17:33:22 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.119.24) 1.33ms
+[I 170728 17:33:22 web:1946] 200 GET /api/session (192.168.119.24) 3.17ms
+[I 170728 17:33:22 web:1946] 200 GET /api/index (192.168.119.24) 1.91ms
+[I 170728 17:33:22 web:1946] 200 GET /api/area (192.168.119.24) 2.63ms
+[I 170728 17:33:37 web:1946] 200 GET /my.html (192.168.119.24) 4.32ms
+[I 170728 17:33:37 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 6.54ms
+[I 170728 17:33:37 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 1.85ms
+[I 170728 17:33:37 web:1946] 304 GET /api/session (192.168.119.24) 1.34ms
+[I 170728 17:33:37 web:1946] 200 GET /api/userinfo (192.168.119.24) 3.27ms
+[I 170728 17:33:39 web:1946] 304 GET /lorders.html (192.168.119.24) 3.17ms
+[I 170728 17:33:39 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 3.34ms
+[I 170728 17:33:39 web:1946] 304 GET /api/session (192.168.119.24) 1.88ms
+[I 170728 17:33:39 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 4.60ms
+[I 170728 17:34:11 web:1946] 304 GET /lorders.html (192.168.119.24) 1.85ms
+[I 170728 17:34:11 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.35ms
+[I 170728 17:34:11 web:1946] 304 GET /api/session (192.168.119.24) 1.27ms
+[I 170728 17:34:11 web:1946] 304 GET /api/order?role=landlord (192.168.119.24) 2.90ms
+[I 170728 17:52:45 autoreload:204] /home/python/Desktop/love-renting/handlers/order.py modified; restarting server
+[I 170728 17:52:55 web:1946] 200 GET /lorders.html (192.168.119.24) 9.82ms
+[I 170728 17:52:55 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 3.55ms
+[I 170728 17:52:55 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 2.73ms
+[I 170728 17:52:55 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 2.82ms
+[I 170728 17:52:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 1.67ms
+[I 170728 17:52:55 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 2.70ms
+[I 170728 17:52:55 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 1.83ms
+[I 170728 17:52:55 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 6.06ms
+[I 170728 17:52:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 3.47ms
+[I 170728 17:52:55 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 2.55ms
+[I 170728 17:52:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 4.96ms
+[I 170728 17:52:55 web:1946] 200 GET /static/js/template.js (192.168.119.24) 2.22ms
+[I 170728 17:52:55 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 2.94ms
+[I 170728 17:52:55 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 5.22ms
+[I 170728 17:52:56 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.119.24) 43.55ms
+[I 170728 17:52:56 web:1946] 200 GET /api/session (192.168.119.24) 0.94ms
+[E 170728 17:52:56 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Mobile Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|5d64887d|b23ef5e454d51f5b785ab25c19d3bc15|1501235575'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 17:52:56 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 3.47ms
+[I 170728 17:52:56 web:1946] 200 GET /favicon.ico (192.168.119.24) 2.02ms
+[I 170728 17:52:56 web:1946] 200 GET /login.html (192.168.119.24) 2.38ms
+[I 170728 17:52:56 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 1.65ms
+[I 170728 17:52:56 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 1.97ms
+[I 170728 17:52:56 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 1.73ms
+[I 170728 17:53:21 web:1946] 200 PUT /api/session (192.168.119.24) 4.71ms
+[I 170728 17:53:22 web:1946] 200 GET /index.html (192.168.119.24) 2.24ms
+[I 170728 17:53:22 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 1.85ms
+[I 170728 17:53:22 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.68ms
+[I 170728 17:53:22 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 2.35ms
+[I 170728 17:53:22 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 2.12ms
+[I 170728 17:53:22 web:1946] 200 GET /api/session (192.168.119.24) 1.25ms
+[I 170728 17:53:22 web:1946] 200 GET /api/index (192.168.119.24) 1.55ms
+[I 170728 17:53:22 web:1946] 200 GET /api/area (192.168.119.24) 0.88ms
+[W 170728 17:53:22 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (192.168.119.24) 2.13ms
+[I 170728 17:53:23 web:1946] 200 GET /my.html (192.168.119.24) 2.37ms
+[I 170728 17:53:23 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 1.52ms
+[I 170728 17:53:23 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 1.80ms
+[I 170728 17:53:23 web:1946] 304 GET /api/session (192.168.119.24) 1.45ms
+[I 170728 17:53:23 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.75ms
+[I 170728 17:53:24 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 4.66ms
+[I 170728 17:53:24 web:1946] 304 GET /api/session (192.168.119.24) 1.75ms
+[I 170728 17:53:24 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 5.23ms
+[I 170728 17:53:30 web:1946] 200 PUT /api/order (192.168.119.24) 0.96ms
+[I 170728 17:53:31 web:1946] 200 PUT /api/order (192.168.119.24) 1.34ms
+[I 170728 17:54:00 web:1946] 200 PUT /api/order (192.168.119.24) 2.50ms
+[I 170728 17:54:01 web:1946] 200 PUT /api/order (192.168.119.24) 2.10ms
+[I 170728 17:54:14 web:1946] 200 PUT /api/order (192.168.119.24) 2.53ms
+[I 170728 17:54:23 web:1946] 200 PUT /api/order (192.168.119.24) 2.00ms
+[I 170728 17:54:27 web:1946] 304 GET /lorders.html (192.168.119.24) 1.70ms
+[I 170728 17:54:27 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 5.10ms
+[I 170728 17:54:27 web:1946] 304 GET /api/session (192.168.119.24) 2.45ms
+[I 170728 17:54:27 web:1946] 304 GET /api/order?role=landlord (192.168.119.24) 2.37ms
+[I 170728 17:54:32 web:1946] 200 PUT /api/order (192.168.119.24) 1.50ms
+[I 170728 17:54:33 web:1946] 200 PUT /api/order (192.168.119.24) 3.03ms
+[I 170728 17:55:34 web:1946] 200 PUT /api/order (192.168.119.24) 2.26ms
+[I 170728 17:55:35 web:1946] 200 PUT /api/order (192.168.119.24) 1.26ms
+[I 170728 17:55:36 web:1946] 200 PUT /api/order (192.168.119.24) 1.51ms
+[I 170728 17:55:36 web:1946] 200 PUT /api/order (192.168.119.24) 1.23ms
+[I 170728 18:10:23 autoreload:204] /home/python/Desktop/love-renting/handlers/order.py modified; restarting server
+[I 170728 18:10:55 web:1946] 200 GET /lorders.html (192.168.119.24) 10.29ms
+[I 170728 18:10:55 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 13.01ms
+[I 170728 18:10:55 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 5.22ms
+[I 170728 18:10:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 5.38ms
+[I 170728 18:10:55 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 0.91ms
+[I 170728 18:10:55 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 2.59ms
+[I 170728 18:10:55 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 2.38ms
+[I 170728 18:10:55 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 5.24ms
+[I 170728 18:10:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 3.34ms
+[I 170728 18:10:55 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 1.57ms
+[I 170728 18:10:56 web:1946] 200 GET /static/js/template.js (192.168.119.24) 9.19ms
+[I 170728 18:10:56 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 1.94ms
+[I 170728 18:10:56 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 1.86ms
+[I 170728 18:10:56 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 3.00ms
+[I 170728 18:10:56 web:1946] 200 GET /api/session (192.168.119.24) 0.85ms
+[E 170728 18:10:56 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|2123493e|afb007ba64988fe2f3ffc77aca73f5d5|1501236655'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 18:10:56 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 5.58ms
+[I 170728 18:10:56 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.80ms
+[I 170728 18:10:56 web:1946] 200 GET /login.html (192.168.119.24) 0.89ms
+[I 170728 18:10:56 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 7.51ms
+[I 170728 18:10:56 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 5.00ms
+[I 170728 18:10:56 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 5.46ms
+[I 170728 18:11:19 web:1946] 200 PUT /api/session (192.168.119.24) 2.84ms
+[I 170728 18:11:19 web:1946] 200 GET /index.html (192.168.119.24) 1.93ms
+[I 170728 18:11:20 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 7.68ms
+[I 170728 18:11:20 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.32ms
+[I 170728 18:11:20 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 2.40ms
+[I 170728 18:11:20 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 1.80ms
+[I 170728 18:11:20 web:1946] 200 GET /api/session (192.168.119.24) 1.56ms
+[I 170728 18:11:20 web:1946] 200 GET /api/area (192.168.119.24) 1.18ms
+[I 170728 18:11:20 web:1946] 200 GET /api/index (192.168.119.24) 5.52ms
+[I 170728 18:11:22 web:1946] 200 GET /my.html (192.168.119.24) 2.51ms
+[I 170728 18:11:23 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 5.78ms
+[I 170728 18:11:23 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 4.93ms
+[I 170728 18:11:23 web:1946] 304 GET /api/session (192.168.119.24) 1.07ms
+[I 170728 18:11:23 web:1946] 200 GET /api/userinfo (192.168.119.24) 2.69ms
+[I 170728 18:11:24 web:1946] 304 GET /api/session (192.168.119.24) 1.10ms
+[I 170728 18:11:24 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 4.09ms
+[I 170728 18:11:27 web:1946] 200 PUT /api/order (192.168.119.24) 2.23ms
+[I 170728 18:11:27 web:1946] 200 PUT /api/order (192.168.119.24) 1.81ms
+[I 170728 18:11:28 web:1946] 200 PUT /api/order (192.168.119.24) 1.19ms
+[I 170728 18:11:34 web:1946] 200 PUT /api/order (192.168.119.24) 1.21ms
+[I 170728 18:11:35 web:1946] 200 PUT /api/order (192.168.119.24) 1.46ms
+[I 170728 18:11:35 web:1946] 200 PUT /api/order (192.168.119.24) 2.12ms
+[I 170728 18:11:35 web:1946] 200 PUT /api/order (192.168.119.24) 2.85ms
+[I 170728 18:12:20 web:1946] 304 GET /lorders.html (192.168.119.24) 1.03ms
+[I 170728 18:12:20 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.12ms
+[I 170728 18:12:20 web:1946] 304 GET /api/session (192.168.119.24) 1.49ms
+[I 170728 18:12:20 web:1946] 304 GET /api/order?role=landlord (192.168.119.24) 2.55ms
+[I 170728 18:12:20 web:1946] 200 GET /favicon.ico (192.168.119.24) 5.53ms
+[I 170728 18:12:29 web:1946] 200 PUT /api/order (192.168.119.24) 1.61ms
+[I 170728 18:43:52 web:1946] 200 PUT /api/order (192.168.119.24) 1.15ms
+[I 170728 18:44:10 web:1946] 200 PUT /api/order (192.168.119.24) 3.61ms
+[I 170728 18:44:21 web:1946] 200 PUT /api/order (192.168.119.24) 1.39ms
+[I 170728 18:44:22 web:1946] 200 PUT /api/order (192.168.119.24) 3.34ms
+[I 170728 18:44:22 web:1946] 200 PUT /api/order (192.168.119.24) 3.53ms
+[I 170728 18:44:22 web:1946] 200 PUT /api/order (192.168.119.24) 2.61ms
+[I 170728 18:44:25 web:1946] 200 PUT /api/order (192.168.119.24) 1.99ms
+[I 170728 18:44:25 web:1946] 200 PUT /api/order (192.168.119.24) 1.77ms
+[I 170728 18:44:25 web:1946] 200 PUT /api/order (192.168.119.24) 2.67ms
+[I 170728 18:55:28 web:1946] 304 GET /lorders.html (192.168.119.24) 2.20ms
+[I 170728 18:55:28 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 2.73ms
+[I 170728 18:55:28 web:1946] 304 GET /api/session (192.168.119.24) 1.66ms
+[I 170728 18:55:28 web:1946] 304 GET /api/order?role=landlord (192.168.119.24) 3.14ms
+[I 170728 18:55:28 web:1946] 200 GET /favicon.ico (192.168.119.24) 3.07ms
+[I 170728 18:55:36 web:1946] 200 GET /lorders.html (192.168.119.24) 1.53ms
+[I 170728 18:55:36 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 2.61ms
+[I 170728 18:55:36 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 1.73ms
+[I 170728 18:55:36 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 3.08ms
+[I 170728 18:55:36 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 2.54ms
+[I 170728 18:55:36 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 4.70ms
+[I 170728 18:55:36 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 2.93ms
+[I 170728 18:55:36 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 4.55ms
+[I 170728 18:55:36 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 4.20ms
+[I 170728 18:55:36 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 2.09ms
+[I 170728 18:55:36 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 2.20ms
+[I 170728 18:55:36 web:1946] 200 GET /static/js/template.js (192.168.119.24) 1.97ms
+[I 170728 18:55:37 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 13.28ms
+[I 170728 18:55:37 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 24.35ms
+[E 170728 18:55:37 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|c8770ce1|f7d7c295f237694a2895b7ca7d96004d|1501239336'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 18:55:37 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 1.93ms
+[I 170728 18:55:37 web:1946] 200 GET /api/session (192.168.119.24) 1.75ms
+[I 170728 18:55:37 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.88ms
+[I 170728 18:55:37 web:1946] 200 GET /login.html (192.168.119.24) 3.25ms
+[I 170728 18:55:37 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 1.86ms
+[I 170728 18:55:37 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 16.96ms
+[I 170728 18:55:37 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 3.30ms
+[I 170728 18:55:57 web:1946] 200 PUT /api/session (192.168.119.24) 2.21ms
+[I 170728 18:55:57 web:1946] 200 GET /index.html (192.168.119.24) 1.86ms
+[I 170728 18:55:57 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 1.71ms
+[I 170728 18:55:57 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.13ms
+[I 170728 18:55:57 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 3.43ms
+[I 170728 18:55:57 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 1.37ms
+[I 170728 18:55:57 web:1946] 200 GET /api/session (192.168.119.24) 3.22ms
+[I 170728 18:55:57 web:1946] 200 GET /api/index (192.168.119.24) 1.39ms
+[I 170728 18:55:57 web:1946] 200 GET /api/area (192.168.119.24) 1.43ms
+[I 170728 18:56:00 web:1946] 200 GET /search.html?aid=&aname=&sd=&ed= (192.168.119.24) 6.17ms
+[I 170728 18:56:00 web:1946] 200 GET /static/js/ihome/search.js (192.168.119.24) 1.96ms
+[I 170728 18:56:00 web:1946] 200 GET /static/css/ihome/search.css (192.168.119.24) 4.21ms
+[I 170728 18:56:00 web:1946] 304 GET /api/area (192.168.119.24) 0.93ms
+[I 170728 18:56:00 web:1946] 200 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 3.37ms
+[I 170728 18:56:02 web:1946] 200 GET / (192.168.119.24) 2.42ms
+[I 170728 18:56:02 web:1946] 304 GET /api/session (192.168.119.24) 1.69ms
+[I 170728 18:56:02 web:1946] 304 GET /api/index (192.168.119.24) 0.97ms
+[I 170728 18:56:02 web:1946] 304 GET /api/area (192.168.119.24) 3.13ms
+[I 170728 18:56:03 web:1946] 200 GET /my.html (192.168.119.24) 2.38ms
+[I 170728 18:56:03 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 8.71ms
+[I 170728 18:56:03 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 1.96ms
+[I 170728 18:56:03 web:1946] 304 GET /api/session (192.168.119.24) 2.91ms
+[I 170728 18:56:03 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.49ms
+[I 170728 18:56:04 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 5.53ms
+[I 170728 18:56:04 web:1946] 304 GET /api/session (192.168.119.24) 1.75ms
+[I 170728 18:56:04 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 3.41ms
+[I 170728 18:56:08 web:1946] 200 PUT /api/order (192.168.119.24) 3.12ms
+[I 170728 18:56:40 web:1946] 200 PUT /api/order (192.168.119.24) 1.49ms
+[I 170728 18:57:27 web:1946] 200 GET /lorders.html (192.168.119.24) 2.94ms
+[I 170728 18:57:27 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 37.95ms
+[I 170728 18:57:27 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 1.82ms
+[I 170728 18:57:27 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 2.37ms
+[I 170728 18:57:27 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 1.35ms
+[I 170728 18:57:27 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 1.27ms
+[I 170728 18:57:27 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 3.19ms
+[I 170728 18:57:27 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 7.65ms
+[I 170728 18:57:27 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 3.44ms
+[I 170728 18:57:27 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 2.01ms
+[I 170728 18:57:27 web:1946] 200 GET /static/js/template.js (192.168.119.24) 2.54ms
+[I 170728 18:57:27 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 9.70ms
+[I 170728 18:57:27 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 12.13ms
+[I 170728 18:57:27 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 3.80ms
+[I 170728 18:57:27 web:1946] 200 GET /api/session (192.168.119.24) 1.05ms
+[E 170728 18:57:27 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|cd33c96f|a3fbd6f63862ff49a417716b00fb27a8|1501239447'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 18:57:27 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 1.77ms
+[I 170728 18:57:27 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.40ms
+[I 170728 18:57:27 web:1946] 200 GET /login.html (192.168.119.24) 4.64ms
+[I 170728 18:57:27 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 4.20ms
+[I 170728 18:57:27 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 9.29ms
+[I 170728 18:57:27 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 4.17ms
+[I 170728 18:57:49 web:1946] 200 PUT /api/session (192.168.119.24) 2.97ms
+[I 170728 18:57:49 web:1946] 200 GET /index.html (192.168.119.24) 3.84ms
+[I 170728 18:57:49 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 3.04ms
+[I 170728 18:57:49 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 8.06ms
+[I 170728 18:57:49 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 14.78ms
+[I 170728 18:57:49 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 1.55ms
+[I 170728 18:57:49 web:1946] 200 GET /api/session (192.168.119.24) 1.53ms
+[I 170728 18:57:49 web:1946] 200 GET /api/area (192.168.119.24) 1.02ms
+[I 170728 18:57:49 web:1946] 200 GET /api/index (192.168.119.24) 1.68ms
+[I 170728 18:57:52 web:1946] 200 GET /search.html?aid=&aname=&sd=&ed= (192.168.119.24) 2.90ms
+[I 170728 18:57:52 web:1946] 200 GET /static/js/ihome/search.js (192.168.119.24) 5.19ms
+[I 170728 18:57:52 web:1946] 200 GET /static/css/ihome/search.css (192.168.119.24) 8.06ms
+[I 170728 18:57:52 web:1946] 304 GET /api/area (192.168.119.24) 0.96ms
+[I 170728 18:57:52 web:1946] 200 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 1.67ms
+[I 170728 18:57:54 web:1946] 200 GET / (192.168.119.24) 4.01ms
+[I 170728 18:57:54 web:1946] 304 GET /api/session (192.168.119.24) 1.74ms
+[I 170728 18:57:54 web:1946] 304 GET /api/index (192.168.119.24) 0.88ms
+[I 170728 18:57:54 web:1946] 304 GET /api/area (192.168.119.24) 7.08ms
+[I 170728 18:57:55 web:1946] 200 GET /my.html (192.168.119.24) 4.24ms
+[I 170728 18:57:55 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 2.65ms
+[I 170728 18:57:55 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 4.65ms
+[I 170728 18:57:55 web:1946] 304 GET /api/session (192.168.119.24) 1.14ms
+[I 170728 18:57:55 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.84ms
+[I 170728 18:57:56 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 3.29ms
+[I 170728 18:57:56 web:1946] 304 GET /api/session (192.168.119.24) 3.07ms
+[I 170728 18:57:56 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 3.96ms
+[I 170728 18:57:59 web:1946] 200 PUT /api/order (192.168.119.24) 1.89ms
+[I 170728 18:58:05 web:1946] 200 PUT /api/order (192.168.119.24) 1.21ms
+[I 170728 18:59:43 autoreload:204] /home/python/Desktop/love-renting/handlers/order.py modified; restarting server
+[I 170728 18:59:52 web:1946] 200 GET /lorders.html (192.168.119.24) 9.39ms
+[I 170728 18:59:52 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 10.07ms
+[I 170728 18:59:52 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 4.03ms
+[I 170728 18:59:52 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 1.37ms
+[I 170728 18:59:52 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 3.61ms
+[I 170728 18:59:52 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 1.82ms
+[I 170728 18:59:52 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 1.71ms
+[I 170728 18:59:52 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 4.96ms
+[I 170728 18:59:52 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 3.12ms
+[I 170728 18:59:52 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 6.40ms
+[I 170728 18:59:52 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 6.39ms
+[I 170728 18:59:52 web:1946] 200 GET /static/js/template.js (192.168.119.24) 2.89ms
+[I 170728 18:59:52 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 1.36ms
+[I 170728 18:59:52 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 5.89ms
+[I 170728 18:59:52 web:1946] 200 GET /api/session (192.168.119.24) 1.33ms
+[E 170728 18:59:52 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|ef676396|e4bdee20a1856cd586bfe6d683bccbfd|1501239592'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 18:59:52 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 2.74ms
+[I 170728 18:59:52 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.82ms
+[I 170728 18:59:52 web:1946] 200 GET /login.html (192.168.119.24) 2.27ms
+[I 170728 18:59:52 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 1.74ms
+[I 170728 18:59:52 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 1.69ms
+[I 170728 18:59:52 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 1.66ms
+[I 170728 19:00:10 web:1946] 304 GET /login.html (192.168.119.24) 1.50ms
+[I 170728 19:00:10 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.36ms
+[I 170728 19:00:17 web:1946] 200 PUT /api/session (192.168.119.24) 2.36ms
+[I 170728 19:00:17 web:1946] 200 GET /index.html (192.168.119.24) 2.81ms
+[I 170728 19:00:17 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 1.71ms
+[I 170728 19:00:17 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.67ms
+[I 170728 19:00:17 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 2.79ms
+[I 170728 19:00:17 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 2.50ms
+[I 170728 19:00:17 web:1946] 200 GET /api/session (192.168.119.24) 1.48ms
+[I 170728 19:00:17 web:1946] 200 GET /api/index (192.168.119.24) 0.86ms
+[I 170728 19:00:17 web:1946] 200 GET /api/area (192.168.119.24) 1.23ms
+[I 170728 19:00:20 web:1946] 200 GET /search.html?aid=&aname=&sd=&ed= (192.168.119.24) 2.13ms
+[I 170728 19:00:20 web:1946] 200 GET /static/css/ihome/search.css (192.168.119.24) 2.29ms
+[I 170728 19:00:20 web:1946] 200 GET /static/js/ihome/search.js (192.168.119.24) 1.74ms
+[I 170728 19:00:20 web:1946] 304 GET /api/area (192.168.119.24) 1.38ms
+[I 170728 19:00:20 web:1946] 200 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 0.86ms
+[I 170728 19:00:22 web:1946] 200 GET / (192.168.119.24) 2.53ms
+[I 170728 19:00:22 web:1946] 304 GET /api/session (192.168.119.24) 1.36ms
+[I 170728 19:00:22 web:1946] 304 GET /api/area (192.168.119.24) 0.93ms
+[I 170728 19:00:22 web:1946] 304 GET /api/index (192.168.119.24) 1.47ms
+[I 170728 19:00:23 web:1946] 200 GET /my.html (192.168.119.24) 1.88ms
+[I 170728 19:00:23 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 2.56ms
+[I 170728 19:00:23 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 1.44ms
+[I 170728 19:00:23 web:1946] 304 GET /api/session (192.168.119.24) 1.14ms
+[I 170728 19:00:23 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.90ms
+[I 170728 19:00:25 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.33ms
+[I 170728 19:00:25 web:1946] 304 GET /api/session (192.168.119.24) 1.03ms
+[I 170728 19:00:25 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 3.31ms
+[I 170728 19:00:28 web:1946] 200 PUT /api/order (192.168.119.24) 1.52ms
+[I 170728 19:00:43 web:1946] 200 PUT /api/order (192.168.119.24) 1.82ms
+[I 170728 19:01:32 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.119.24) 21.45ms
+[I 170728 19:02:54 autoreload:204] /home/python/Desktop/love-renting/handlers/order.py modified; restarting server
+[I 170728 19:03:11 web:1946] 200 GET /lorders.html (192.168.119.24) 8.16ms
+[I 170728 19:03:11 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 23.99ms
+[I 170728 19:03:11 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 1.54ms
+[I 170728 19:03:11 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 2.78ms
+[I 170728 19:03:11 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 1.43ms
+[I 170728 19:03:11 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 2.37ms
+[I 170728 19:03:11 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 4.50ms
+[I 170728 19:03:11 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 4.17ms
+[I 170728 19:03:11 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 2.92ms
+[I 170728 19:03:11 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 4.50ms
+[I 170728 19:03:11 web:1946] 200 GET /static/js/template.js (192.168.119.24) 2.58ms
+[I 170728 19:03:11 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 10.57ms
+[I 170728 19:03:11 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 15.70ms
+[I 170728 19:03:11 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 2.50ms
+[E 170728 19:03:11 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|496de930|067b8b021e11ba7b2273275060940274|1501239791'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 19:03:11 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 3.92ms
+[I 170728 19:03:11 web:1946] 200 GET /api/session (192.168.119.24) 1.12ms
+[I 170728 19:03:11 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.36ms
+[I 170728 19:03:11 web:1946] 200 GET /login.html (192.168.119.24) 2.06ms
+[I 170728 19:03:11 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 1.79ms
+[I 170728 19:03:11 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 1.77ms
+[I 170728 19:03:11 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 1.46ms
+[I 170728 19:03:33 web:1946] 200 PUT /api/session (192.168.119.24) 2.39ms
+[I 170728 19:03:33 web:1946] 200 GET /index.html (192.168.119.24) 1.69ms
+[I 170728 19:03:33 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 2.10ms
+[I 170728 19:03:33 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.51ms
+[I 170728 19:03:33 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 2.71ms
+[I 170728 19:03:33 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 2.10ms
+[I 170728 19:03:33 web:1946] 200 GET /api/session (192.168.119.24) 1.89ms
+[I 170728 19:03:33 web:1946] 200 GET /api/index (192.168.119.24) 1.94ms
+[I 170728 19:03:33 web:1946] 200 GET /api/area (192.168.119.24) 1.22ms
+[I 170728 19:03:36 web:1946] 200 GET /my.html (192.168.119.24) 2.66ms
+[I 170728 19:03:36 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 3.31ms
+[I 170728 19:03:36 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 1.85ms
+[I 170728 19:03:36 web:1946] 304 GET /api/session (192.168.119.24) 1.81ms
+[I 170728 19:03:36 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.79ms
+[I 170728 19:03:37 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.55ms
+[I 170728 19:03:37 web:1946] 304 GET /api/session (192.168.119.24) 1.39ms
+[I 170728 19:03:37 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 3.16ms
+[I 170728 19:03:46 web:1946] 200 PUT /api/order (192.168.119.24) 1.05ms
+[I 170728 19:08:35 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.119.24) 34.88ms
+[I 170728 19:09:02 web:1946] 200 PUT /api/order (192.168.119.24) 2.87ms
+[I 170728 19:09:21 web:1946] 200 PUT /api/order (192.168.119.24) 2.75ms
+[I 170728 19:09:21 web:1946] 304 GET /lorders.html (192.168.119.24) 1.91ms
+[I 170728 19:09:22 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.67ms
+[I 170728 19:09:22 web:1946] 304 GET /api/session (192.168.119.24) 1.68ms
+[I 170728 19:09:22 web:1946] 304 GET /api/order?role=landlord (192.168.119.24) 5.34ms
+[I 170728 19:19:01 web:1946] 200 GET /lorders.html (192.168.119.24) 3.33ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 4.62ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 2.02ms
+[I 170728 19:19:01 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 2.22ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 2.34ms
+[I 170728 19:19:01 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 2.62ms
+[I 170728 19:19:01 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 2.04ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 3.37ms
+[I 170728 19:19:01 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 7.56ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 23.15ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 1.96ms
+[I 170728 19:19:01 web:1946] 200 GET /static/js/template.js (192.168.119.24) 4.42ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 2.96ms
+[I 170728 19:19:01 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 3.28ms
+[I 170728 19:19:01 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (192.168.119.24) 26.75ms
+[I 170728 19:19:01 web:1946] 200 GET /api/session (192.168.119.24) 1.33ms
+[E 170728 19:19:01 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|abdd1316|08de96397c9f57d10ac7669248a46557|1501240741'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 19:19:01 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 2.09ms
+[I 170728 19:19:01 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.60ms
+[I 170728 19:19:01 web:1946] 200 GET /login.html (192.168.119.24) 1.15ms
+[I 170728 19:19:01 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 1.73ms
+[I 170728 19:19:01 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 1.61ms
+[I 170728 19:19:01 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 1.78ms
+[I 170728 19:19:23 web:1946] 200 PUT /api/session (192.168.119.24) 2.17ms
+[I 170728 19:19:23 web:1946] 200 GET /index.html (192.168.119.24) 8.03ms
+[I 170728 19:19:23 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 10.72ms
+[I 170728 19:19:23 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.35ms
+[I 170728 19:19:23 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 5.23ms
+[I 170728 19:19:23 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 1.90ms
+[I 170728 19:19:23 web:1946] 200 GET /api/session (192.168.119.24) 1.80ms
+[I 170728 19:19:23 web:1946] 200 GET /api/area (192.168.119.24) 1.05ms
+[I 170728 19:19:23 web:1946] 200 GET /api/index (192.168.119.24) 1.25ms
+[I 170728 19:19:25 web:1946] 200 GET /my.html (192.168.119.24) 2.21ms
+[I 170728 19:19:25 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 1.58ms
+[I 170728 19:19:25 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 1.96ms
+[I 170728 19:19:25 web:1946] 304 GET /api/session (192.168.119.24) 1.10ms
+[I 170728 19:19:25 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.73ms
+[I 170728 19:19:29 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.38ms
+[I 170728 19:19:29 web:1946] 304 GET /api/session (192.168.119.24) 1.09ms
+[I 170728 19:19:29 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 2.76ms
+[I 170728 19:19:49 web:1946] 200 PUT /api/order (192.168.119.24) 14.29ms
+[I 170728 19:20:00 web:1946] 200 PUT /api/order (192.168.119.24) 6.59ms
+[I 170728 19:20:06 web:1946] 200 PUT /api/order (192.168.119.24) 3.30ms
+[I 170728 19:20:52 web:1946] 200 GET /lorders.html (192.168.119.24) 3.25ms
+[I 170728 19:20:52 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 29.63ms
+[I 170728 19:20:52 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 1.08ms
+[I 170728 19:20:52 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 2.20ms
+[I 170728 19:20:52 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 0.98ms
+[I 170728 19:20:52 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 2.20ms
+[I 170728 19:20:52 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 2.86ms
+[I 170728 19:20:52 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 3.91ms
+[I 170728 19:20:52 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 6.07ms
+[I 170728 19:20:52 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 3.35ms
+[I 170728 19:20:52 web:1946] 200 GET /static/js/template.js (192.168.119.24) 1.20ms
+[I 170728 19:20:52 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 11.87ms
+[I 170728 19:20:52 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 10.03ms
+[I 170728 19:20:52 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 1.85ms
+[I 170728 19:20:52 web:1946] 200 GET /api/session (192.168.119.24) 1.14ms
+[E 170728 19:20:52 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|7f6b5515|2ec49dff849fc5e231f2e8e4dec096db|1501240852'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 19:20:52 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 2.61ms
+[I 170728 19:20:52 web:1946] 200 GET /favicon.ico (192.168.119.24) 4.52ms
+[I 170728 19:20:52 web:1946] 200 GET /login.html (192.168.119.24) 2.72ms
+[I 170728 19:20:52 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 1.88ms
+[I 170728 19:20:52 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 2.80ms
+[I 170728 19:20:52 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 4.46ms
+[I 170728 19:21:01 web:1946] 200 PUT /api/session (192.168.119.24) 3.46ms
+[I 170728 19:21:01 web:1946] 200 GET /index.html (192.168.119.24) 3.01ms
+[I 170728 19:21:01 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 2.06ms
+[I 170728 19:21:01 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.42ms
+[I 170728 19:21:01 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 6.07ms
+[I 170728 19:21:01 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 2.63ms
+[I 170728 19:21:01 web:1946] 200 GET /api/session (192.168.119.24) 2.84ms
+[I 170728 19:21:01 web:1946] 200 GET /api/index (192.168.119.24) 0.97ms
+[I 170728 19:21:01 web:1946] 200 GET /api/area (192.168.119.24) 1.19ms
+[I 170728 19:21:03 web:1946] 200 GET /my.html (192.168.119.24) 4.73ms
+[I 170728 19:21:03 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 2.21ms
+[I 170728 19:21:03 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 1.63ms
+[I 170728 19:21:03 web:1946] 304 GET /api/session (192.168.119.24) 3.88ms
+[I 170728 19:21:03 web:1946] 200 GET /api/userinfo (192.168.119.24) 2.25ms
+[I 170728 19:21:04 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 2.19ms
+[I 170728 19:21:05 web:1946] 304 GET /api/session (192.168.119.24) 1.18ms
+[I 170728 19:21:05 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 3.01ms
+[I 170728 19:21:09 web:1946] 200 PUT /api/order (192.168.119.24) 7.65ms
+[I 170728 19:21:19 web:1946] 200 PUT /api/order (192.168.119.24) 7.97ms
+[I 170728 19:21:24 web:1946] 304 GET /lorders.html (192.168.119.24) 1.46ms
+[I 170728 19:21:24 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 3.55ms
+[I 170728 19:21:24 web:1946] 304 GET /api/session (192.168.119.24) 1.17ms
+[I 170728 19:21:24 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 2.34ms
+[I 170728 19:21:25 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.63ms
+[I 170728 19:21:39 web:1946] 304 GET /lorders.html (192.168.119.24) 1.07ms
+[I 170728 19:21:39 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.27ms
+[I 170728 19:21:39 web:1946] 304 GET /api/session (192.168.119.24) 1.44ms
+[I 170728 19:21:39 web:1946] 304 GET /api/order?role=landlord (192.168.119.24) 2.24ms
+[I 170728 19:21:39 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.64ms
+[I 170728 19:22:53 autoreload:204] /home/python/Desktop/love-renting/handlers/order.py modified; restarting server
+[I 170728 19:29:48 web:1946] 200 GET /lorders.html (192.168.119.24) 8.49ms
+[I 170728 19:29:48 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (192.168.119.24) 10.48ms
+[I 170728 19:29:48 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (192.168.119.24) 3.71ms
+[I 170728 19:29:48 web:1946] 200 GET /static/css/ihome/main.css (192.168.119.24) 3.94ms
+[I 170728 19:29:48 web:1946] 200 GET /static/css/ihome/orders.css (192.168.119.24) 4.17ms
+[I 170728 19:29:48 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (192.168.119.24) 2.50ms
+[I 170728 19:29:48 web:1946] 200 GET /static/css/reset.css (192.168.119.24) 1.39ms
+[I 170728 19:29:48 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (192.168.119.24) 7.79ms
+[I 170728 19:29:48 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (192.168.119.24) 6.74ms
+[I 170728 19:29:48 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (192.168.119.24) 3.00ms
+[I 170728 19:29:48 web:1946] 200 GET /static/js/jquery.min.js (192.168.119.24) 9.75ms
+[I 170728 19:29:48 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (192.168.119.24) 10.87ms
+[I 170728 19:29:48 web:1946] 200 GET /static/js/template.js (192.168.119.24) 1.58ms
+[I 170728 19:29:48 web:1946] 200 GET /static/js/ihome/lorders.js (192.168.119.24) 1.27ms
+[I 170728 19:29:49 web:1946] 200 GET /api/session (192.168.119.24) 0.99ms
+[E 170728 19:29:49 web:1524] Uncaught exception GET /api/order?role=landlord (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=landlord', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/lorders.html', 'Cookie': '_xsrf=2|89f73f9c|d47778124ebf3f23001490b35bd112a4|1501241388'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 19:29:49 web:1946] 500 GET /api/order?role=landlord (192.168.119.24) 2.42ms
+[I 170728 19:29:49 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.77ms
+[I 170728 19:29:49 web:1946] 200 GET /login.html (192.168.119.24) 8.00ms
+[I 170728 19:29:49 web:1946] 200 GET /static/images/logo@128x59.png (192.168.119.24) 3.63ms
+[I 170728 19:29:49 web:1946] 200 GET /static/css/ihome/login.css (192.168.119.24) 8.00ms
+[I 170728 19:29:49 web:1946] 200 GET /static/js/ihome/login.js (192.168.119.24) 3.37ms
+[I 170728 19:30:50 web:1946] 200 PUT /api/session (192.168.119.24) 2.27ms
+[I 170728 19:30:50 web:1946] 200 GET /index.html (192.168.119.24) 4.71ms
+[I 170728 19:30:50 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (192.168.119.24) 2.24ms
+[I 170728 19:30:50 web:1946] 200 GET /static/css/ihome/index.css (192.168.119.24) 1.31ms
+[I 170728 19:30:50 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (192.168.119.24) 10.53ms
+[I 170728 19:30:50 web:1946] 200 GET /static/js/ihome/index.js (192.168.119.24) 1.44ms
+[I 170728 19:30:50 web:1946] 200 GET /api/session (192.168.119.24) 2.11ms
+[I 170728 19:30:50 web:1946] 200 GET /api/area (192.168.119.24) 1.36ms
+[I 170728 19:30:50 web:1946] 200 GET /api/index (192.168.119.24) 2.32ms
+[I 170728 19:30:52 web:1946] 200 GET /my.html (192.168.119.24) 1.05ms
+[I 170728 19:30:52 web:1946] 200 GET /static/css/ihome/my.css (192.168.119.24) 2.08ms
+[I 170728 19:30:52 web:1946] 200 GET /static/js/ihome/my.js (192.168.119.24) 4.10ms
+[I 170728 19:30:52 web:1946] 304 GET /api/session (192.168.119.24) 1.31ms
+[I 170728 19:30:52 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.53ms
+[I 170728 19:30:53 web:1946] 200 GET /orders.html (192.168.119.24) 2.49ms
+[I 170728 19:30:53 web:1946] 200 GET /static/js/ihome/orders.js (192.168.119.24) 2.16ms
+[I 170728 19:30:53 web:1946] 304 GET /api/session (192.168.119.24) 11.65ms
+[I 170728 19:30:53 web:1946] 200 GET /api/order?role=tenant (192.168.119.24) 3.38ms
+[I 170728 19:30:54 web:1946] 304 GET /api/session (192.168.119.24) 1.23ms
+[I 170728 19:30:54 web:1946] 304 GET /api/userinfo (192.168.119.24) 2.36ms
+[I 170728 19:30:56 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 1.12ms
+[I 170728 19:30:56 web:1946] 304 GET /api/session (192.168.119.24) 0.90ms
+[I 170728 19:30:56 web:1946] 200 GET /api/order?role=landlord (192.168.119.24) 1.65ms
+[I 170728 19:30:57 web:1946] 304 GET /api/session (192.168.119.24) 1.29ms
+[I 170728 19:30:57 web:1946] 304 GET /api/userinfo (192.168.119.24) 6.72ms
+[I 170728 19:30:58 web:1946] 200 GET / (192.168.119.24) 1.39ms
+[I 170728 19:30:58 web:1946] 304 GET /api/index (192.168.119.24) 1.09ms
+[I 170728 19:30:58 web:1946] 304 GET /api/session (192.168.119.24) 1.85ms
+[I 170728 19:30:58 web:1946] 304 GET /api/area (192.168.119.24) 1.48ms
+[I 170728 19:31:02 web:1946] 200 GET /search.html?aid=&aname=&sd=&ed= (192.168.119.24) 3.62ms
+[I 170728 19:31:02 web:1946] 200 GET /static/css/ihome/search.css (192.168.119.24) 11.54ms
+[I 170728 19:31:02 web:1946] 200 GET /static/js/ihome/search.js (192.168.119.24) 7.08ms
+[I 170728 19:31:02 web:1946] 304 GET /api/area (192.168.119.24) 1.90ms
+[I 170728 19:31:02 web:1946] 200 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 0.82ms
+[I 170728 19:31:04 web:1946] 200 GET /detail.html?id=13 (192.168.119.24) 5.55ms
+[I 170728 19:31:04 web:1946] 200 GET /static/css/ihome/detail.css (192.168.119.24) 1.88ms
+[I 170728 19:31:04 web:1946] 200 GET /static/js/ihome/detail.js (192.168.119.24) 4.58ms
+[I 170728 19:31:04 web:1946] 200 GET /static/images/houseicon_sprite.png (192.168.119.24) 1.38ms
+[I 170728 19:31:04 web:1946] 304 GET /api/session (192.168.119.24) 1.16ms
+[I 170728 19:31:04 web:1946] 200 GET /api/house/detail?house_id=13 (192.168.119.24) 203.37ms
+[I 170728 19:31:05 web:1946] 200 GET /booking.html?id=13 (192.168.119.24) 3.82ms
+[I 170728 19:31:05 web:1946] 200 GET /static/js/ihome/booking.js (192.168.119.24) 1.57ms
+[I 170728 19:31:05 web:1946] 200 GET /static/css/ihome/booking.css (192.168.119.24) 3.75ms
+[I 170728 19:31:05 web:1946] 304 GET /api/session (192.168.119.24) 2.33ms
+[I 170728 19:31:05 web:1946] 200 GET /api/booking?id=13 (192.168.119.24) 1.45ms
+[I 170728 19:31:10 web:1946] 200 POST /api/booking (192.168.119.24) 8.77ms
+[I 170728 19:31:11 web:1946] 304 GET /api/session (192.168.119.24) 1.24ms
+[I 170728 19:31:11 web:1946] 200 GET /api/order?role=tenant (192.168.119.24) 6.55ms
+[I 170728 19:31:13 web:1946] 304 GET /api/session (192.168.119.24) 1.26ms
+[I 170728 19:31:13 web:1946] 304 GET /api/userinfo (192.168.119.24) 2.49ms
+[I 170728 19:31:15 web:1946] 304 GET /api/session (192.168.119.24) 3.61ms
+[I 170728 19:31:15 web:1946] 304 GET /api/area (192.168.119.24) 0.69ms
+[I 170728 19:31:15 web:1946] 304 GET /api/index (192.168.119.24) 1.76ms
+[I 170728 19:31:17 web:1946] 304 GET /api/area (192.168.119.24) 0.86ms
+[I 170728 19:31:17 web:1946] 304 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 1.23ms
+[I 170728 19:31:19 web:1946] 200 GET /api/search?sd=&ed=&aid=&sk=new&p=2 (192.168.119.24) 0.78ms
+[I 170728 19:31:20 web:1946] 200 GET /detail.html?id=11 (192.168.119.24) 2.86ms
+[I 170728 19:31:20 web:1946] 304 GET /api/session (192.168.119.24) 1.86ms
+[I 170728 19:31:20 web:1946] 200 GET /api/house/detail?house_id=11 (192.168.119.24) 12.19ms
+[I 170728 19:31:22 web:1946] 304 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 1.71ms
+[I 170728 19:31:24 web:1946] 304 GET /api/search?sd=&ed=&aid=&sk=new&p=2 (192.168.119.24) 4.64ms
+[I 170728 19:31:24 web:1946] 200 GET /api/search?sd=&ed=&aid=&sk=new&p=3 (192.168.119.24) 1.15ms
+[I 170728 19:31:26 web:1946] 200 GET /detail.html?id=9 (192.168.119.24) 3.07ms
+[I 170728 19:31:26 web:1946] 304 GET /api/session (192.168.119.24) 1.43ms
+[I 170728 19:31:26 web:1946] 200 GET /api/house/detail?house_id=9 (192.168.119.24) 6.28ms
+[I 170728 19:31:28 web:1946] 200 GET /booking.html?id=9 (192.168.119.24) 3.73ms
+[I 170728 19:31:28 web:1946] 304 GET /api/session (192.168.119.24) 1.35ms
+[I 170728 19:31:28 web:1946] 200 GET /api/booking?id=9 (192.168.119.24) 2.59ms
+[I 170728 19:31:31 web:1946] 200 POST /api/booking (192.168.119.24) 7.29ms
+[I 170728 19:31:32 web:1946] 200 GET /api/order?role=tenant (192.168.119.24) 2.61ms
+[I 170728 19:31:32 web:1946] 304 GET /api/session (192.168.119.24) 4.23ms
+[I 170728 19:31:33 web:1946] 304 GET /api/userinfo (192.168.119.24) 2.04ms
+[I 170728 19:31:33 web:1946] 304 GET /api/session (192.168.119.24) 1.64ms
+[I 170728 19:31:34 web:1946] 304 GET /api/session (192.168.119.24) 2.35ms
+[I 170728 19:31:34 web:1946] 304 GET /api/index (192.168.119.24) 0.88ms
+[I 170728 19:31:34 web:1946] 304 GET /api/area (192.168.119.24) 0.87ms
+[I 170728 19:31:37 web:1946] 304 GET /api/session (192.168.119.24) 1.18ms
+[I 170728 19:31:37 web:1946] 304 GET /api/userinfo (192.168.119.24) 3.93ms
+[I 170728 19:31:38 web:1946] 304 GET /api/session (192.168.119.24) 2.99ms
+[I 170728 19:31:38 web:1946] 304 GET /api/order?role=tenant (192.168.119.24) 4.13ms
+[I 170728 19:31:39 web:1946] 304 GET /api/session (192.168.119.24) 1.15ms
+[I 170728 19:31:39 web:1946] 304 GET /api/userinfo (192.168.119.24) 5.37ms
+[I 170728 19:31:40 web:1946] 304 GET /static/js/ihome/lorders.js (192.168.119.24) 3.33ms
+[I 170728 19:31:40 web:1946] 304 GET /api/session (192.168.119.24) 1.08ms
+[I 170728 19:31:40 web:1946] 304 GET /api/order?role=landlord (192.168.119.24) 3.30ms
+[I 170728 19:31:41 web:1946] 304 GET /api/session (192.168.119.24) 1.33ms
+[I 170728 19:31:41 web:1946] 304 GET /api/userinfo (192.168.119.24) 4.59ms
+[I 170728 19:31:45 web:1946] 304 GET /api/session (192.168.119.24) 1.00ms
+[I 170728 19:31:45 web:1946] 304 GET /api/order?role=tenant (192.168.119.24) 2.73ms
+[I 170728 19:33:50 autoreload:204] /home/python/Desktop/love-renting/handlers/order.py modified; restarting server
+[I 170728 19:33:53 web:1946] 304 GET /orders.html (192.168.119.24) 6.51ms
+[E 170728 19:33:53 web:1524] Uncaught exception GET /api/order?role=tenant (192.168.119.24)
+    HTTPServerRequest(protocol='http', host='192.168.119.20:8000', method='GET', uri='/api/order?role=tenant', version='HTTP/1.1', remote_ip='192.168.119.24', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.119.20:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.119.20:8000/orders.html', 'Cookie': '_xsrf=2|89f73f9c|d47778124ebf3f23001490b35bd112a4|1501241388; session_id="2|1:0|10:1501241450|10:session_id|44:Yzk3NTRkZmNjNTIxNDkzMTg3YmU0YTc5MDljZDQwMTQ=|ff3e965f3794f3138d9765740f9addca37a4d2711a5e497211b4fd7e3e3e7389"', 'If-None-Match': '"e713c7b98eaae4855b4aaacafdd7a742f33ef4e3"'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/Desktop/love-renting/handlers/order.py", line 83, in get
+        userId=mySession.data['userId']
+    KeyError: 'userId'
+[E 170728 19:33:53 web:1946] 500 GET /api/order?role=tenant (192.168.119.24) 2.28ms
+[I 170728 19:33:53 web:1946] 200 GET /api/session (192.168.119.24) 3.39ms
+[I 170728 19:33:53 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.37ms
+[I 170728 19:35:42 web:1946] 304 GET /login.html (192.168.119.24) 2.46ms
+[I 170728 19:35:42 web:1946] 200 GET /favicon.ico (192.168.119.24) 1.13ms
+[I 170728 19:35:49 web:1946] 200 PUT /api/session (192.168.119.24) 4.22ms
+[I 170728 19:35:49 web:1946] 200 GET /api/session (192.168.119.24) 4.02ms
+[I 170728 19:35:49 web:1946] 304 GET /api/area (192.168.119.24) 1.25ms
+[I 170728 19:35:49 web:1946] 304 GET /api/index (192.168.119.24) 3.27ms
+[I 170728 19:35:51 web:1946] 304 GET /api/session (192.168.119.24) 1.30ms
+[I 170728 19:35:51 web:1946] 200 GET /api/userinfo (192.168.119.24) 1.97ms
+[I 170728 19:35:52 web:1946] 304 GET /api/session (192.168.119.24) 1.60ms
+[I 170728 19:35:52 web:1946] 200 GET /api/order?role=tenant (192.168.119.24) 3.33ms
+[I 170728 19:35:55 web:1946] 304 GET /api/session (192.168.119.24) 0.90ms
+[I 170728 19:35:55 web:1946] 304 GET /api/userinfo (192.168.119.24) 2.10ms
+[I 170728 19:35:58 web:1946] 304 GET /api/session (192.168.119.24) 1.88ms
+[I 170728 19:35:58 web:1946] 304 GET /api/area (192.168.119.24) 0.85ms
+[I 170728 19:35:58 web:1946] 304 GET /api/index (192.168.119.24) 1.04ms
+[I 170728 19:36:00 web:1946] 304 GET /api/area (192.168.119.24) 0.95ms
+[I 170728 19:36:00 web:1946] 304 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 1.06ms
+[I 170728 19:36:03 web:1946] 200 GET /detail.html?id=12 (192.168.119.24) 2.17ms
+[I 170728 19:36:03 web:1946] 304 GET /api/session (192.168.119.24) 1.07ms
+[I 170728 19:36:03 web:1946] 200 GET /api/house/detail?house_id=12 (192.168.119.24) 181.61ms
+[I 170728 19:36:05 web:1946] 200 GET /booking.html?id=12 (192.168.119.24) 2.09ms
+[I 170728 19:36:05 web:1946] 304 GET /api/session (192.168.119.24) 1.54ms
+[I 170728 19:36:05 web:1946] 200 GET /api/booking?id=12 (192.168.119.24) 1.23ms
+[I 170728 19:36:09 web:1946] 200 POST /api/booking (192.168.119.24) 8.99ms
+[I 170728 19:36:11 web:1946] 304 GET /api/session (192.168.119.24) 2.08ms
+[I 170728 19:36:11 web:1946] 200 GET /api/order?role=tenant (192.168.119.24) 2.78ms
+[I 170728 19:36:12 web:1946] 304 GET /api/session (192.168.119.24) 1.34ms
+[I 170728 19:36:12 web:1946] 304 GET /api/userinfo (192.168.119.24) 1.62ms
+[I 170728 19:36:15 web:1946] 304 GET /api/session (192.168.119.24) 1.39ms
+[I 170728 19:36:15 web:1946] 304 GET /api/area (192.168.119.24) 3.84ms
+[I 170728 19:36:15 web:1946] 304 GET /api/index (192.168.119.24) 2.73ms
+[I 170728 19:36:17 web:1946] 304 GET /api/area (192.168.119.24) 0.94ms
+[I 170728 19:36:17 web:1946] 304 GET /api/search?sd=&ed=&aid=&sk=new&p=1 (192.168.119.24) 0.87ms
